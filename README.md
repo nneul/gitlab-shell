@@ -86,3 +86,7 @@ List all keys:
 Remove all keys from authorized_keys file:
 
     ./bin/gitlab-keys clear
+
+Regenerate keys in authorized_keys file from database after removing all keys:
+
+    bundle exec rake gitlab:shell:setup RAILS_ENV=production
